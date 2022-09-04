@@ -54,6 +54,7 @@ void exec(char **args) {
     if (strcmp(builtin[i], args[0]) == 0) {
       (*builtin_func[i])(args);
       printf("\n");
+      return;
     }
   }
 
@@ -81,7 +82,18 @@ void loop() {
 }
 
 void print() {
-  system("cat ysh.cat");
+  printf("      ___          ___          ___\n");
+  printf("     |\\__\\        /\\  \\        /\\__\\   \n");
+  printf("     | |  |      /  \\  \\      / /  /   \n");
+  printf("     | |  |     / /\\ \\  \\    / /__/    \n");
+  printf("     | |__|__  _\\ \\~\\ \\  \\  /  \\  \\ ___\n");
+  printf("     /    \\__\\/\\ \\ \\ \\ \\__\\/ /\\ \\  /\\__\\\n");
+  printf("    / /~~/~   \\ \\ \\ \\ \\/__/\\/__\\ \\/ /  /\n");
+  printf("   / /  /      \\ \\ \\ \\__\\       \\  /  /\n");
+  printf("   \\/__/        \\ \\/ /  /       / /  / \n");
+  printf("                 \\  /  /       / /  /  \n ");
+  printf("                 \\/__/        \\/__/   \n");
+
   printf("\n");
 }
 

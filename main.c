@@ -6,7 +6,7 @@
 #include <sys/wait.h>
 #include <unistd.h>
 
-#define DELIM " \t\r\a\n"
+#define DELIM " \t\r\a\n\""
 #define BUF_SIZE 64
 
 void launch_process(char **args) {
